@@ -12,4 +12,6 @@ window.onload = function() {
     );
 
     document.body.appendChild(app.view);
+
+    // Test comment
 }
