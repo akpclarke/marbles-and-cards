@@ -1,17 +1,17 @@
 import * as PIXI from './node_modules/pixi.js/dist/pixi.min.mjs';
 
 let app;
+const gameCanvas = document.getElementById('game-canvas');
 
 window.onload = function() {
+
     app = new PIXI.Application(
         {
-            width: 800,
-            height: 600,
+            view: gameCanvas,
+            width: gameCanvas.width,
+            height: gameCanvas.height,
             backgroundColor: 0xAAAAAA
         }
     );
 
-    document.body.appendChild(app.view);
-
-    // Test comment
 }
