@@ -13,7 +13,8 @@ window.onload = function() {
         height: window.innerHeight,
         resolution: 1,
         autoDensity: true,
-        autoResize: true,
+        resizeTo: window,
+        // autoResize: false,
         backgroundColor: 0xBBC8E1
     });
 
@@ -24,7 +25,7 @@ window.onload = function() {
     const stage = new PIXI.Container();
 
     // Creating the game board and adding it to the stage
-    const texture = PIXI.Texture.from("../resources/game_board.png");
+    const texture = PIXI.Texture.from("../resources/game_board.svg");
     const img = new PIXI.Sprite(texture);
     img.width = renderer.height / 2;
     img.height = renderer.height / 2;
