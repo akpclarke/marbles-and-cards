@@ -1,0 +1,1 @@
+All documentation for this project can be found on the wiki
